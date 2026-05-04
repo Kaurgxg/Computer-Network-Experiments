@@ -1,0 +1,23 @@
+Assignment 2: Packet Flow Observation
+
+First Ping (PC0 → PC1):
+- ARP Request was sent as broadcast to all devices
+- ARP Reply received from destination PC
+- ICMP Echo Request sent
+- ICMP Echo Reply received
+- More packets observed due to ARP process
+
+Second Ping (PC0 → PC1):
+- No ARP Request observed
+- Only ICMP Request and Reply seen
+- MAC address was already stored in ARP cache
+- Fewer packets observed, faster communication
+
+MAC Learning:
+- Switch learned MAC addresses of PCs
+- Switch forwarded frames only to correct port
+- No unnecessary broadcasting after learning
+
+Conclusion:
+ARP resolves IP to MAC address before communication.
+After caching, communication becomes faster and efficient.

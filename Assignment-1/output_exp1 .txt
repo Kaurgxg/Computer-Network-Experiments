@@ -1,0 +1,30 @@
+EXPERIMENT 1 – NETWORK TOPOLOGIES OUTPUT
+
+Successful Ping Results:
+
+Star Topology (Switch): - All PCs successfully communicated. - 0% packet
+loss observed. - Switch forwards frames only to intended destination.
+
+Hub-Based Topology (Bus-like): - All PCs successfully communicated. -
+Hub broadcasts frames to all devices. - Shared bandwidth reduces
+performance.
+
+Ring-like Topology: - PCs across different switches successfully
+communicated. - Spanning Tree Protocol (STP) blocked one redundant
+path. - After disconnecting one link, communication still worked using
+alternate path.
+
+Failure Test Observations:
+
+Star: - If one PC disconnects → Only that PC affected. - If switch fails
+→ Entire network fails.
+
+Hub: - Entire network shares one collision domain. - Hub failure causes
+total network failure.
+
+Ring-like: - Provides redundancy. - If one link fails → Network
+continues to function. - STP recalculates path automatically.
+
+Conclusion: Topology affects performance, reliability, and fault
+tolerance. Switch-based networks provide better performance, while
+ring-like topologies provide redundancy.
